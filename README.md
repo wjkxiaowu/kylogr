@@ -8,7 +8,7 @@ kylogr 是用来方便做日志切割和回收的，主要基于file-rotatelogs�
 
 ```go
 import(
-    "github.com/wjkxiaowu/kylogr"
+    _ "github.com/wjkxiaowu/kylogr"
 )
 ```
 

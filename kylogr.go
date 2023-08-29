@@ -23,6 +23,10 @@ const (
 )
 
 func init() {
+	InitLog()
+}
+
+func InitLog() {
 	logDir := GetEnvWithDefault("LOG_DIR", DEFAULT_LOG_DIR)
 	logNamePrefix := GetEnvWithDefault("LOG_NAME_PREFIX", DEFAULT_LOG_NAME_PREFIX)
 	logNameSuffix := GetEnvWithDefault("LOG_NAME_SUFFIX", DEFAULT_LOG_NAME_SUFFIX)

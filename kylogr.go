@@ -22,7 +22,7 @@ const (
 	DEFAULT_LOG_FORMATTER      = "text"
 )
 
-func InitLog() {
+func init() {
 	logDir := GetEnvWithDefault("LOG_DIR", DEFAULT_LOG_DIR)
 	logNamePrefix := GetEnvWithDefault("LOG_NAME_PREFIX", DEFAULT_LOG_NAME_PREFIX)
 	logNameSuffix := GetEnvWithDefault("LOG_NAME_SUFFIX", DEFAULT_LOG_NAME_SUFFIX)
